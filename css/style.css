@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar img {
+    height: 50px;
+    margin: 10px 20px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 565px;
+    padding: 5px 40px;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+
+#home::before {
+    content: "";
+    background: url('../img/bkg3.avif') no-repeat center center/cover;
+    position: absolute;
+    height: 645px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.h-primary {
+    font-size: 5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#home p {
+    font-size: 3.5rem;
+    color: #fff100;
+}
+
+.main-headings {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 30px;
+}
+
+#services {
+    display: flex;
+    padding: 10px 10px;
+    justify-content: center;
+}
+
+.box {
+    height: 100%;
+    width: 350px;
+    /* border: 2px solid red; */
+    margin: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 4px 4px 5px #d8d4d4;
+    background-color: white;
+}
+
+.box:hover {
+    transform: scale(1.04);
+    transition: 0.2s ease-in;
+    box-shadow: 4px 4px 5px #aaa2a2;
+}
+
+.serv-img {
+    height: auto;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.sub-headings {
+    font-size: 1.8rem;
+    margin: 15px 0px;
+}
+
+.box p {
+    font-size: 1rem;
+    text-align: left;
+    padding: 0px 15px 15px 15px;
+}
+
+#about-container {
+    border: 1px solid white;
+    background-color: aqua;
+}
+
+#about-container p {
+    padding: 0px 40px 15px 40px;
+    font-size: 1rem;
+    margin-top: 30px;
+}
+
+#contact-container {
+    border: 1px solid white;
+    background-color: burlywood;
+}
+
+#contact-container p {
+    padding: 0px 40px;
+    font-size: 1rem;
+    margin-top: 30px;
+
+}
+
+#contact-container h2 {
+    padding: 10px 0px;
+    margin: 10px;
+    text-align: center;
+}
+
+#contact-container h3 {
+    font-size: 2rem;
+    padding: 10px 0px;
+    margin: 10px;
+    text-align: center;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+}
+
+#contact-box form {
+    width: 30%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.btn1 {
+    display: flex;
+    padding: 5px 10px;
+    margin: 10px auto;
+    background-color: red;
+    border-radius: 7px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    background-color: rgb(238, 249, 249);
+    font-weight: bold;
+    box-shadow: 1px 1px 5px black;
+}
+
+footer {
+    background-color: black;
+    color: red;
+    text-align: center;
+}
